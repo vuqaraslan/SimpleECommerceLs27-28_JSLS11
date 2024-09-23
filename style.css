@@ -1,0 +1,92 @@
+*{
+    user-select: none;
+}
+
+.basket{
+    position: relative;
+    background-color: white;
+    padding:12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.basket-number{
+    position: absolute;
+    top: -12px;
+    left: -8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    background-color: red;
+}
+
+.basket-element{
+    border: 1px solid black;
+    padding: 12px;
+    margin: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+.basket-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.basket-btn button,
+.delete-btn
+{
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.basket-btn span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.delete-btn i{
+    color: red;
+}
+
+.basket-footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 16px;
+    font-size: 20px;
+}
+
+.products{
+    margin-top: 60px;
+}
+
+.product-img{
+    height: 400px;
+}
+
+.product-shop-btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 16px 32px;
+    background-color: black;
+    border-bottom-left-radius: 32px;
+}
+
+.product-shop-btn i{
+    color: white;
+    font-size: 20px;
+}
+
+.product-shop-btn.active i{
+    color: red;
+}
